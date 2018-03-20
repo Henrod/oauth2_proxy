@@ -1,6 +1,6 @@
 #!/bin/bash
 # build binary distributions for linux/amd64 and darwin/amd64
-set -e
+# set -e
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "working dir $DIR"

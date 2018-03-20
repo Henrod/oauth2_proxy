@@ -41,6 +41,8 @@ func (vt *ValidatorTest) UpdateEmailFileViaRenameAndReplace(
 }
 
 func TestValidatorOverwriteEmailListDirectly(t *testing.T) {
+	println("henrod")
+
 	vt := NewValidatorTest(t)
 	defer vt.TearDown()
 
