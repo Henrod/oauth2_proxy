@@ -24,7 +24,7 @@ for os in windows linux darwin; do
     fi
     BUILD=$(mktemp -d ${TMPDIR:-/tmp}/oauth2_proxy.XXXXXX)
     TARGET="oauth2_proxy-$version.$os-$arch.$goversion"
-    FILENAME="oauth2_proxy-$version.$os-$arch$EXT"
+    FILENAME="oauth2_proxy"
     GOOS=$os GOARCH=$arch CGO_ENABLED=0 \
         go build -ldflags="-s -w" -o $BUILD/$TARGET/$FILENAME || exit 1
     pushd $BUILD/$TARGET
